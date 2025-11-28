@@ -8,7 +8,7 @@ resource "aws_db_instance" "swiggy-db" {
   allocated_storage           = 100
   storage_type                = "gp3"
   engine                      = "mysql"
-  engine_version              = "8.0.41"
+  engine_version              = "8.0.43"
   instance_class              = "db.m5.large"
   identifier                  = "swiggy-db"
   username                    = "admin"
