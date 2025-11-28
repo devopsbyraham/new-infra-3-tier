@@ -22,7 +22,6 @@ resource "aws_launch_template" "swiggy-app-template" {
   name_prefix   = "swiggy-app-template"
   image_id      = "ami-0d176f79571d18a8f"
   instance_type = "t3.small"
-  key_name      = "fahimsiddiqui113kpp"
 
   network_interfaces {
     security_groups             = [aws_security_group.swiggy-ec2-asg-sg-app.id]
